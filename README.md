@@ -5,7 +5,7 @@ The purpose of this website is to:
 * provide user with product images
 * provide product menu
 * provide product prices
-* prodive a form to contact business owner
+* provide a form to contact business owner
 
 ## Built with:
 

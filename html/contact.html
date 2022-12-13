@@ -25,9 +25,41 @@
             </ul>
         </nav>
         <main>
-            <form action="">
-
-            </form>
+        <section class="contact">
+            <div class="form-container">
+                <div class="form-content">
+                    <p class="form-message">Contact Me</p>
+                    <form id="form">
+                        <input
+                            type="text"
+                            class="form-input"
+                            name="name"
+                            placeholder="Name"
+                            data-input
+                        />
+                        <input
+                            type="email"
+                            class="form-input"
+                            name="email"
+                            placeholder="Email"
+                            data-input
+                        />
+                        <textarea
+                            name="message"
+                            id="message"
+                            cols="30"
+                            rows="10"
+                            class="form-input"
+                            placeholder="Message"
+                            data-input
+                        ></textarea>
+                        <div class="button">
+                            <button type="submit" data-button>Send</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
         </main>
         <script src="../script.js"></script>
     </body>

@@ -95,6 +95,7 @@ nav {
     display: flex;
     justify-content: space-around;
     width: 30%;
+    transition: all 0.5s ease-in;
 }
 
 .nav-links li {
@@ -108,14 +109,30 @@ nav {
     color: #743c68;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 700px) {
     .about {
         padding: 1.3rem;
         font-size: 0.95rem;
     }
 
     .nav-links {
-        display: none;
+        display: block;
+        position: absolute;
+        overflow-x: hidden;
+        top: 70px;
+        width: 100%;
+        height: 100vh;
+        left: -100%;
+        text-align: center;
+        transition: all 0.5s ease-in-out;
+    }
+
+    .nav-links li {
+        margin-top: 30px;
+    }
+
+    .nav-links li a {
+        font-size: 1.5rem;
     }
 
     .contact {
@@ -158,14 +175,8 @@ nav {
         margin: 0;
     }
 
-    .nav-links {
-        left: -100%;
-    }
-
     .active {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
+        display: block;
         position: fixed;
         width: 100%;
         height: 90vh;
@@ -173,6 +184,5 @@ nav {
         top: 70px;
         left: 0%;
         text-align: center;
-        transition: all 1s;
     }
 }

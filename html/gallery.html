@@ -9,25 +9,33 @@
     <link rel="stylesheet" href="../css/gallery.css">
 </head>
     <body>
-        <header class="header">
-            <nav>
+        <nav>
             <div class="logo">Mae's Cakes</div>
-            <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="gallery.html">Gallery</a></li>
-                <li><a href="menu.html">Menu</a></li>
-                <li><a href="prices.html">Prices</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-            <div class="dropdown">
+            <div class="dropdown" data-dropdown>
                 <div class="dd-bar"></div>
                 <div class="dd-bar"></div>
                 <div class="dd-bar"></div>
             </div>
-            </nav>
+            <ul class="nav-links" data-links>
+                <li class="main-nav-li"><a href="index.html">Home</a></li>
+                <li class="main-nav-li"><a href="gallery.html">Gallery</a></li>
+                <li class="main-nav-li"><a href="menu.html">Menu</a></li>
+                <li class="main-nav-li"><a href="prices.html">Prices</a></li>
+                <li class="main-nav-li"><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
         </header>
         <main>
-            <h1>This is the gallery page</h1>
+            <section class="gallery">
+                <div class="pic-grid">
+                    <div><img src="../images/pexels-abhinav-goswami-291528.jpg" alt="An image of a slice of cake."></div>
+                    <div><img src="../images/pexels-abhinav-goswami-291528.jpg" alt="An image of a slice of cake."></div>
+                    <div><img src="../images/pexels-abhinav-goswami-291528.jpg" alt="An image of a slice of cake."></div>
+                    <div><img src="../images/pexels-abhinav-goswami-291528.jpg" alt="An image of a slice of cake."></div>
+                    <div><img src="../images/pexels-abhinav-goswami-291528.jpg" alt="An image of a slice of cake."></div>
+                    <div><img src="../images/pexels-abhinav-goswami-291528.jpg" alt="An image of a slice of cake."></div>
+                </div>
+            </section>
         </main>
         <script src="../script.js"></script>
     </body>

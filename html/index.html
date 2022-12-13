@@ -5,37 +5,59 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Mae's Cakes</title>
-        <link rel="icon" href="../images/favicon-32x32.png">
+        <link rel="icon" href="../images/favicon-32x32.png" />
         <link rel="stylesheet" href="../css/main.css" />
     </head>
     <body>
-        <header class="header">
+        <nav>
             <div class="logo">Mae's Cakes</div>
-            <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="gallery.html">Gallery</a></li>
-                <li><a href="menu.html">Menu</a></li>
-                <li><a href="prices.html">Prices</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-            <div class="dropdown">
+            <div class="dropdown" data-dropdown>
                 <div class="dd-bar"></div>
                 <div class="dd-bar"></div>
                 <div class="dd-bar"></div>
             </div>
-        </header>
+            <ul class="nav-links" data-links>
+                <li class="main-nav-li"><a href="index.html">Home</a></li>
+                <li class="main-nav-li"><a href="gallery.html">Gallery</a></li>
+                <li class="main-nav-li"><a href="menu.html">Menu</a></li>
+                <li class="main-nav-li"><a href="prices.html">Prices</a></li>
+                <li class="main-nav-li"><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
         <main>
-            <section class="hero">
+            <section class="home">
                 <div class="img-container">
-                <img class="home-img" src="../images/pexels-abhinav-goswami-291528.jpg" alt="An image of a slice of cake.">
-                <!-- Photo by Abhinav Goswami: https://www.pexels.com/photo/sliced-cake-on-plate-291528/ -->
+                    <img
+                        class="home-img"
+                        src="../images/pexels-abhinav-goswami-291528.jpg"
+                        alt="An image of a slice of cake."
+                    />
+                    <!-- Photo by Abhinav Goswami: https://www.pexels.com/photo/sliced-cake-on-plate-291528/ -->
                 </div>
                 <div class="about">
-                    <h1 class="baking">What baking means to me</h1>
-                    <p>Baking has always been a hobby of mine, but it quckly became an expression of love to my friends and family.</p>
-                    <p>When someone orders a custome dessert for a loved one, I know that it is coming from their heart.</p>
-                    <p>That is why everything is made from scratch and with great care using only the highest quality ingredients.</p>
+                    <h1 class="mission">What Baking Means to Me</h1>
+                    <p>
+                        Baking has always been a hobby of mine, but it quckly
+                        became an expression of love to my friends and family.
+                    </p>
+                    <p>
+                        When someone orders a custome dessert for a loved one, I
+                        know that it is coming from their heart.
+                    </p>
+                    <p>
+                        That is why everything is made from scratch and with
+                        great care using only the highest quality ingredients.
+                    </p>
                 </div>
+            </section>
+            <section class="contact">
+                <button
+                    type="button"
+                    onclick="location.href='contact.html'"
+                    class="home-contact-btn"
+                >
+                    Contact Me
+                </button>
             </section>
         </main>
         <script src="../script.js"></script>

@@ -32,12 +32,29 @@ video {
     max-width: 100%;
 }
 
+button:hover {
+    background-color: #743c6836;
+}
+
 footer {
+    color: #743c68;
     text-align: center;
     margin-top: 1rem;
     padding: 0.75rem;
     border-top: 1px solid #743c683d;
     font-family: 'Heebo', sans-serif;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    border-bottom: 1px solid #743c683d;
+    background-color: #fefae0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
 }
 
 .about {
@@ -68,17 +85,6 @@ footer {
     border-radius: 5px;
 }
 
-nav {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    border-bottom: 1px solid #743c683d;
-    background-color: #fefae0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 70px;
-}
 
 .home {
     display: flex;

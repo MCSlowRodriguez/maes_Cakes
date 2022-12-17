@@ -1,6 +1,7 @@
 .pic-grid {
     margin-top: 70px;
-    display: grid;
+    display: flex;
+    flex-flow: row wrap;
 }
 
 img {

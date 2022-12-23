@@ -19,7 +19,8 @@ h1 {
     width: 50%;
 }
 
-.cake-menu-block2, .flavor-menu-block2 {
+.cake-menu-block2,
+.flavor-menu-block2 {
     padding-left: 35%;
 }
 
@@ -41,4 +42,45 @@ h1 {
 .menu-container {
     margin: 100px auto 0;
     width: 50%;
+}
+
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    .menu-container {
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+    }
+
+    .cake-flavors {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .filling-flavors {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .cake-menu-name,
+    .filling-menu-name {
+        font-size: 1.5rem;
+    }
+
+    .block-item {
+        font-size: 1.2rem;
+        font-family: 'Heebo', sans-serif;
+        color: #743c68;
+    }
+
+    .cake-menu-block1,
+    .cake-menu-block2,
+    .flavor-menu-block1,
+    .flavor-menu-block2 {
+        width: 100%;
+        padding: 0;
+    }
 }

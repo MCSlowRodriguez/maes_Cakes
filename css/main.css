@@ -41,6 +41,12 @@ footer {
     font-family: 'Heebo', sans-serif;
 }
 
+h1 {
+    font-size: 1.4rem;
+    font-weight: 700;
+    text-align: center;
+}
+
 nav {
     position: fixed;
     top: 0;
@@ -50,13 +56,15 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 70px;
+    height: 60px;
 }
 
 .about {
     font-family: 'Heebo', sans-serif;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
+    padding: 1.5rem;
     color: #743c68;
+    text-align: center;
 }
 
 .about p {
@@ -65,18 +73,18 @@ nav {
 
 .contact {
     display: flex;
-    justify-content: left;
-    align-items: center;
-    margin-top: 50px;
+    justify-content: center;
+    margin-top: 30px;
 }
 
 .dropdown {
-    display: none;
+    display: block;
 }
 
-.mission {
-    font-size: 2rem;
-    font-weight: 700;
+.home {
+    display: flex;
+    flex-flow: wrap;
+    margin-top: 60px;
 }
 
 .dd-bar {
@@ -88,16 +96,9 @@ nav {
     border-radius: 5px;
 }
 
-.home {
-    display: flex;
-    justify-content: center;
-    margin: 10% auto;
-    width: 60%;
-}
-
 .home-contact-btn {
     background-color: #743c68;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
     padding: 0.75rem 2rem;
     border: none;
     border-radius: 10px;
@@ -106,96 +107,48 @@ nav {
 }
 
 .home-img {
-    width: 80%;
+    width: 100%;
     margin: 0;
 }
 
 .logo {
     font-family: 'Pacifico', cursive;
-    font-size: 2.2rem;
+    font-size: 2rem;
     color: #743c68;
     margin-left: 1rem;
 }
 
 .nav-links {
-    display: flex;
-    justify-content: space-around;
-    width: 30%;
-    transition: all 0.5s ease-in;
+    display: block;
+    position: absolute;
+    overflow-x: hidden;
+    top: 100px;
+    width: 100%;
+    height: 100vh;
+    left: -100%;
+    text-align: center;
+    transition: all 0.5s ease-in-out;
+}
+
+.active {
+    display: block;
+    position: fixed;
+    width: 100%;
+    height: 90vh;
+    background-color: #fefae0;
+    top: 60px;
+    left: 0%;
+    text-align: center;
 }
 
 .nav-links li {
     list-style: none;
+    margin-top: 20px;
 }
 
 .nav-links a {
     font-family: 'Heebo', sans-serif;
-    font-size: 1.1rem;
+    font-size: 1.4rem;
     text-decoration: none;
     color: #743c68;
-}
-
-@media screen and (max-width: 700px) {
-    .about {
-        padding: 1.3rem;
-        font-size: 0.95rem;
-    }
-
-    .contact {
-        justify-content: center;
-    }
-
-    .nav-links {
-        display: block;
-        position: absolute;
-        overflow-x: hidden;
-        top: 70px;
-        width: 100%;
-        height: 100vh;
-        left: -100%;
-        text-align: center;
-        transition: all 0.5s ease-in-out;
-    }
-
-    .nav-links li {
-        margin-top: 30px;
-    }
-
-    .nav-links li a {
-        font-size: 1.5rem;
-    }
-
-    .home {
-        flex-direction: column;
-        margin: 40px 0 0 0;
-        width: 100%;
-    }
-
-    .dropdown {
-        display: block;
-    }
-
-    .home-img {
-        width: 100%;
-        margin-bottom: 20px;
-    }
-
-    .mission {
-        font-size: 1.4rem;
-    }
-
-    .main-nav-li {
-        margin: 0;
-    }
-
-    .active {
-        display: block;
-        position: fixed;
-        width: 100%;
-        height: 90vh;
-        background-color: #fefae0;
-        top: 70px;
-        left: 0%;
-        text-align: center;
-    }
 }

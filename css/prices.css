@@ -1,7 +1,16 @@
-h1 {
+h2 {
     font-family: 'Pacifico', cursive;
+    color: #743c68;
+    font-size: var(--fs-l);
 }
 
-.cake-prices {
-    margin-top: 100px;
+.cake-prices, .cupcake-prices {
+    margin: 100px 25px 0;
+
+}
+
+.prices {
+    font-size: var(--fs-500);
+    font-family: 'Heebo', sans-serif;
+    color:#743c68;
 }
